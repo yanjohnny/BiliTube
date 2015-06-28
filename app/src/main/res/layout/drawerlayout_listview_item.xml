@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="52dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/drawerLayout_listView_img"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/hehe"
+                android:id="@+id/drawerLayout_listView_text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/drawerLayout_listView_num"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/android"
+            android:id="@+id/drawerLayout_listView_view"
+            android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile project(':vitamio')
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 20
+        targetSdkVersion 22
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+}
+

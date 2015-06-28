@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.succlz123.bilitube.app.support.ScrollListenerScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="96dp"
+        android:id="@+id/recommend_scrollview"
+        android:clipToPadding="false"
+        android:background="@color/android">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+        <include layout="@layout/recommend_hot"/>
+
+        <include layout="@layout/recommend_bgm"/>
+
+        <include layout="@layout/recommend_douga"/>
+
+        <include layout="@layout/recommend_music"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+</org.succlz123.bilitube.app.support.ScrollListenerScrollView>

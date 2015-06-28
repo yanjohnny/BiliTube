@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.succlz123.bilitube.app.support.ScrollListenerScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="96dp"
+        android:id="@+id/navigation_scrollview"
+        android:clipToPadding="false"
+        android:background="@color/android">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/navigation_linear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:elevation="2dp"
+                    android:background="@color/white">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人气榜单"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/moebase"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:background="@color/basebulebackground"
+                    android:layout_weight="1">
+
+                <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="排行榜"
+                            android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/sienna">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="最热门"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:background="@color/white">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="视频分类"
+                        android:textColor="@color/moebase"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:layout_width="0dp">
+
+            </Space>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/moebase">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="动画"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili2">
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="番剧"
+                        android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili3">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="音乐"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili4">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="舞蹈"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili5">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="游戏"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili6">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="科技"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili7">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="娱乐"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili8">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:elevation="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="鬼畜"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili9">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="电影"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="7dp"
+                    android:elevation="2dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bilibili10">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="电视剧"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</org.succlz123.bilitube.app.support.ScrollListenerScrollView>
